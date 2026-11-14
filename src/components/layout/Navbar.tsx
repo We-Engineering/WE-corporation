@@ -58,7 +58,7 @@ export function Navbar() {
           {/* ── Brand mark ── */}
           <MagneticLink href="#top" className="group flex items-center gap-3">
             <img
-            src="/logo.png"
+            src={`${import.meta.env.BASE_URL}logo.png`}
             alt="WE Engineering logo"
             draggable={false}
             className="h-14 w-auto transition-transform duration-700 group-hover:scale-105"

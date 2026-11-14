@@ -77,7 +77,7 @@ export function Hero() {
 <div className="pointer-events-none absolute inset-0 overflow-hidden">
   <div
     className="hero-bg-image absolute inset-0 bg-cover bg-center bg-no-repeat"
-    style={{ backgroundImage: "url('/hero-bg.jpg')" }}
+    style={{ backgroundImage: `url(${import.meta.env.BASE_URL}hero-bg.jpg)` }}
   />
 
   {/* Gold ambient glow — keeps brand warmth without touching image clarity */}

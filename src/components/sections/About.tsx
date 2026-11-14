@@ -49,7 +49,7 @@ export function About() {
             <div className="group flex flex-col items-center px-3 py-4 text-center sm:px-2 sm:py-2">
               <div className="relative flex h-14 w-14 items-center justify-center overflow-hidden rounded-full border border-gold-polished/40 bg-gradient-to-br from-gold via-gold-polished to-gold-deep shadow-[0_8px_24px_-8px_rgba(160,127,58,0.5)] transition-transform duration-500 ease-out group-hover:scale-110 sm:h-16 sm:w-16">
                 <img
-                  src="/icons/purpose.png"
+                  src={`${import.meta.env.BASE_URL}icons/purpose.png`}
                   alt=""
                   aria-hidden
                   draggable={false}
@@ -69,7 +69,7 @@ export function About() {
             <div className="group flex flex-col items-center px-3 py-4 text-center sm:px-2 sm:py-2">
               <div className="relative flex h-14 w-14 items-center justify-center overflow-hidden rounded-full border border-gold-polished/40 bg-gradient-to-br from-gold via-gold-polished to-gold-deep shadow-[0_8px_24px_-8px_rgba(160,127,58,0.5)] transition-transform duration-500 ease-out group-hover:scale-110 sm:h-16 sm:w-16">
                 <img
-                  src="/icons/vision.png"
+                  src={`${import.meta.env.BASE_URL}icons/vision.png`}
                   alt=""
                   aria-hidden
                   draggable={false}
@@ -89,7 +89,7 @@ export function About() {
             <div className="group flex flex-col items-center px-3 py-4 text-center sm:px-2 sm:py-2">
               <div className="relative flex h-14 w-14 items-center justify-center overflow-hidden rounded-full border border-gold-polished/40 bg-gradient-to-br from-gold via-gold-polished to-gold-deep shadow-[0_8px_24px_-8px_rgba(160,127,58,0.5)] transition-transform duration-500 ease-out group-hover:scale-110 sm:h-16 sm:w-16">
                 <img
-                  src="/icons/mission.png"
+                  src={`${import.meta.env.BASE_URL}icons/mission.png`}
                   alt=""
                   aria-hidden
                   draggable={false}
