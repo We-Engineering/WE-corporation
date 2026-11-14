@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --obsidian: #0b0b0a;
+  --gold: #a07f3a;
+  --gold-polished: #d4af63;
+  --ivory: #f5f1e8;
+  --graphite: #242321;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  background: var(--obsidian);
+  color: var(--ivory);
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Geist", "Inter", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+}
+
+::selection {
+  background: rgba(160, 127, 58, 0.35);
+  color: var(--ivory);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--obsidian);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(160, 127, 58, 0.35);
+  border-radius: 4px;
+}
+
+/* Grain overlay */
+.noise::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.04;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+.gold-text {
+  background: linear-gradient(
+    115deg,
+    #6f5220 0%,
+    #a07f3a 24%,
+    #e8cb83 43%,
+    #d4af63 56%,
+    #8a682b 78%,
+    #a07f3a 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.gold-border {
+  border-image: linear-gradient(
+      115deg,
+      #6f5220,
+      #a07f3a,
+      #e8cb83,
+      #d4af63,
+      #8a682b,
+      #a07f3a
+    )
+    1;
+}
+
+.hairline {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(160, 127, 58, 0.5) 50%,
+    transparent
+  );
+}
+
+.luxury-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--gold-polished);
+  font-weight: 500;
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+}
